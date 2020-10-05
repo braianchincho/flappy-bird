@@ -1,9 +1,9 @@
 class Score {
-    constructor(srcSound ,font, color = 'rgba(0,0,0,1)') {
+    constructor(srcSound ,font = '25px Arial', color = 'rgba(0,0,0,1)') {
         this.score = 0;
         this.audio = new Audio();
         this.audio.src = srcSound;
-        this.font = font || '25px Arial';
+        this.font = font;
         this.color = color;
     }
     add() {
